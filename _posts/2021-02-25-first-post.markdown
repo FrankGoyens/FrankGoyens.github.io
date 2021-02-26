@@ -22,4 +22,4 @@ That is in a nutshell what my content will be about.
 
 Thank you for reading this first post! Please subscribe to the RSS feed to get notified for future posts. I don't plan to dissapoint!  
 
-[GitHub repo]: https://github.com/FrankGoyens
+[frankgoyens-gh]: https://github.com/FrankGoyens
