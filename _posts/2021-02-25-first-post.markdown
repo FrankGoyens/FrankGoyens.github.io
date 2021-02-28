@@ -12,7 +12,7 @@ Also it would be convenient to report on the challenges I faced. Both for others
 
 I plan on making posts about very technical programming insights. And also on the more human side of programming. That's because software development usually happens in a team. A team working within the same code base makes for some interesting interactions. 
 
-In my github repository I also maintain some open source projects in my [GitHub repo][frankgoyens-gh]. Please check it out if that's more your thing.
+also maintain some open source projects in my [GitHub repo][frankgoyens-gh]. Please check it out if that's more your thing.
 
 In my website description I mentioned that I work full-time with C++. I invite you to read the site description if you haven't already. When programmers think of C++ in this day and age, it's usually in an embedded context. But I actually implement fully fledged desktop applications for the metal construction industry.
 
