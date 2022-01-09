@@ -56,3 +56,5 @@ plugins:
 #   - vendor/ruby/
 minima:
   skin: dark
+
+google_analytics: G-S5S027CNC5
