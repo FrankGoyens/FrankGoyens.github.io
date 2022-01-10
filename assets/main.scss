@@ -1,0 +1,19 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+.site-footer{
+	background-image: url('img/footer_background.png'); 
+	background-position: 0% 230px; 
+	background-size: 1920px 100%; 
+	background-repeat:no-repeat;
+}
+
+body{
+	background-image: url('img/left_background_group.png'), url('img/right_background_group.png');
+	background-size: 240px auto; 
+	background-position: 30px 70px, right; 
+	background-repeat:no-repeat;
+}
