@@ -7,13 +7,42 @@
 .site-footer{
 	background-image: url('img/footer_background.png'); 
 	background-position: 0% 230px; 
-	background-size: 1920px 100%; 
-	background-repeat:no-repeat;
 }
 
-body{
-	background-image: url('img/left_background_group.png'), url('img/right_background_group.png');
-	background-size: 240px auto; 
-	background-position: 30px 70px, right; 
-	background-repeat:no-repeat;
+@media screen and (max-width: 5072px) { //when the screen width is less than the footer image width
+	.site-footer{
+		background-size: 1920px 100%; 
+		background-repeat:no-repeat;
+	}
+}
+
+@media screen and (min-width: 5072px) { //when the screen width is more than the footer image witdh
+	.site-footer{
+		background-size: 100% 100%; 
+	}
+}
+
+@media screen and (min-width: 1080px) {
+
+
+	body{
+		background-image: url('img/left_background_group.png'), url('img/right_background_group.png');
+		background-size: 240px auto; 
+		background-position: 30px 70px, right; 
+		background-repeat:no-repeat;
+	}
+
+	.footer-image-for-small-screen{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1080px){
+	.footer-image-for-small-screen{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 50px;
+		width: 120px;
+	}
 }
