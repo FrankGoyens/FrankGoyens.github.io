@@ -69,6 +69,9 @@ Nevertheless, I bought some courses. I chose courses about 2/3D art and animatio
 
 Over the next couple of months I slowly chipped away at the courses. Surprisingly, the colour theory course was by far the most useful to me. My technical brain finally got a means to decide upon which colours to use! These moments of realization really motivate you to keep going.
 
+
+![Colors and their meaning](/assets/img/colour_theory_gist.png){:class="medium-centered-image"}
+
 Essentially, colour theory teaches that colours evoke a certain feeling in people. That might be saying much. But suppose you want to make an asset for a basic enemy. What colour will you choose for it? Probably red right? But like *red*, red, or scarlet rather? Burgundy maybe? For a technical mind, for mine at least, those decisions are very challenging. 
 
 To finish that thought about which colour to choose: Burgundy would be a good choice for a sophisticated, serious enemy. Scarlet would be better suited for a fanatical, berserker kind of enemy. 
@@ -76,6 +79,8 @@ To finish that thought about which colour to choose: Burgundy would be a good ch
 ## Vector graphics
 
 My technical brain is drawn to 2D vector graphics it turns out.
+
+![Editing a vector graphics curve](/assets/img/vector_graphics_gist.png){:class="medium-centered-image"}
 
 I always dreaded having to sketch out drawings, or make digital drawings. I was sure it is necessary for making game assets. I would need to develop muscle memory by practising for a very long time. And then I would need to buy a decent drawing tablet, because how else would you make digital drawings, with a mouse?
 
