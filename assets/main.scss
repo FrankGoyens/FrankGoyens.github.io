@@ -6,23 +6,26 @@
 
 .site-footer{
 	background-image: url('img/footer_background.png'); 
-	background-position: 0% 230px; 
+	background-position: 50% 230px; 
+	background-repeat:no-repeat;
+	background-size: 1920px 100%; 
 }
 
-@media screen and (max-width: 5072px) { //when the screen width is less than the footer image width
-	.site-footer{
-		background-size: 1920px 100%; 
-		background-repeat:no-repeat;
-	}
-}
-
-@media screen and (min-width: 5072px) { //when the screen width is more than the footer image witdh
+@media screen and (min-width: 1920px) { //when the screen width is more than the footer image witdh
 	.site-footer{
 		background-size: 100% 100%; 
 	}
 }
 
-@media screen and (min-width: 1080px) {
+.footer-image-for-small-screen{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	width: 120px;
+}
+
+@media screen and (min-width: 1280px) {
 
 
 	body{
@@ -37,15 +40,6 @@
 	}
 }
 
-@media screen and (max-width: 1080px){
-	.footer-image-for-small-screen{
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 50px;
-		width: 120px;
-	}
-}
 
 .medium-centered-image{
 	display: block;
