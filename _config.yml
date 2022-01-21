@@ -21,11 +21,7 @@
 title: Frank Goyens' personal website
 email: frankgoyens@hotmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Professional insights or random thoughts from a fulltime software developer.
-  I am passionate about coding, for my work I mainly use C++. 
-  C++ is the language I am most fluent in, but I like to think that I practice the meta-language moreso than any specific language.
-  In my spare time I enjoy working on my own projects. 
-  My own projects vary from mobile apps to desktop apps to game making.
+  Professional insights or random thoughts of a fulltime software developer.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: FrankGoyens 
