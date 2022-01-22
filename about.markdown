@@ -6,9 +6,9 @@ permalink: /about/
 
 Hello, my name is Frank Goyens. I am a medior C++ software developer. And a junior software architect.
 
-I am passionate about coding and design. I work fulltime in the metal construction industry. In a nutshell: I process and display CAD drawings. To complement the activities I do at my job. I also enjoy working on my own hobby projects. 
+I am passionate about coding and design. I work fulltime in the metal construction industry. In a nutshell: I process and display CAD drawings for simulation purposes. To complement the activities I do at my job. I also enjoy working on my own hobby projects. 
 
-My goal in the field of coding is figuring out the "meta-language". What I means by this is, for example, figuring out how well certain language features transfer to other languages. But this could also mean figuring out what language features not to use withing a specific language, this is especially good to know in C/C++. 
+My mindset in the field of coding is all about the "meta-language". What I means by this is, for example, figuring out how well certain language features transfer to other languages. But this could also mean figuring out what language features not to use withing a specific language, this is especially good to know in C/C++. 
 
 >“Within C++ is a smaller, simpler, safer language struggling to get out.” 
 >

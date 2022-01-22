@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-inner-title: Introduction
+inner-title: Professional insights. Fun projects.
 ---
 
 My name is Frank Goyens. Born on January 22, 1993. I am a professional C++ software engineer. And software architect.
