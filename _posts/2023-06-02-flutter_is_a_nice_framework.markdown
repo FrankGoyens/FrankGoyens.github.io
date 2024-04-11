@@ -84,6 +84,8 @@ The Flutter framework is well integrated in Android Studio. These are some of th
 * Hints about Dart conventions, which can be applied automatically in most cases. This is a tremendous help to cultivate good habits for a beginner.
 * A hot-reload/hot-restart button. This is a great feature of Flutter in general, applying changes to dart code takes milliseconds to sync with an actual Android device.
 
+It's almost boring, *almost*. But I have no further comments on this. Flutter development in Android Studio is going well for me.
+
 ## The Dart language
 
 {:refdef: style="text-align: center;"}
@@ -92,8 +94,8 @@ The Flutter framework is well integrated in Android Studio. These are some of th
 
 Dart is a single-threaded, asynchronous, strongly-typed language. It being single threaded keeps things simple, while the asynchronous aspect (it has async/await mechanisms) makes it easy to prevent blocking the GUI rendering for longer background tasks.
 
-Here are some technical details about the language worth mentioning:
-* It is a strongly typed language, which makes it less error prone. There is also type deduction, you can just type `final x = calcX()` for instance.
+Here are some technical details about the language:
+* It is a strongly typed language, which makes development less error prone. There is also type deduction, you can just type `final x = calcX()` for instance.
 * It supports runtime and static constants, both are checked during compilation.
 * Dart handles null safety nicely. You can declare a type nullable and you must do a check before using the object, otherwise you get a compiler error. When you check whether a variable is null it is often automatically “promoted” into a non-nullable type.
 
@@ -112,6 +114,6 @@ That being said, learning both a new framework and programming language can be d
 
 Besides, it could be used for web and desktop as well. Learning this framework offers many possibilities.
 
-Thank you for reading about my thoughts on the Flutter framework. I hope it proves helpful to you!
+Thank you for reading about my thoughts and impressions on the Flutter framework. I hope it proves helpful to you!
 
 [flutter_faq_why_dart]: https://docs.flutter.dev/resources/faq#why-did-flutter-choose-to-use-dart
