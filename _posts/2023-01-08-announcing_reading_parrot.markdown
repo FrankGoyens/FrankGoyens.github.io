@@ -2,7 +2,7 @@
 layout: post
 title:  "Announcing \"Reading Parrot\" mobile app"
 date:   2023-01-08 21:20:00 +0100
-categories: [App making]
+categories: appdev
 ---
 
 # Announcing my new \"Reading Parrot\" mobile app!

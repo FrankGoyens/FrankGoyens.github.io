@@ -2,7 +2,7 @@
 layout: post
 title: "My experience with game jams"
 date:   2024-05-10 10:30:00 +0100
-categories: [Game making]
+categories: gamedev
 ---
 
 When I was a student working for my bachelor's degree I participated in

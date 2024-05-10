@@ -2,7 +2,7 @@
 layout: post
 title:  "Becoming a game asset creator"
 date:   2022-01-12 12:45:00 +0100
-categories: [Game making]
+categories: gamedev
 ---
 
 # The complete journey of a complete, technical minded beginner

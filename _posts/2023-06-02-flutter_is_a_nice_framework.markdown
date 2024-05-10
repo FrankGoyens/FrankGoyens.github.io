@@ -2,7 +2,7 @@
 layout: post
 title:  "Flutter is a nice framework"
 date:   2023-06-02 21:20:00 +0100
-categories: [App making]
+categories: appdev
 ---
 
 {:refdef: style="text-align: center;"}
