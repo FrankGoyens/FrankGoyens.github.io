@@ -111,7 +111,7 @@ figure out what that actually meant. Eventually we decided to let the
 player find specific objects to bring to family members around the
 family's house.
 
-![Concept art of my team's game:"Fucking Telenet"](/assets/img/my_experience_with_game_jams/image3.png)*Concept art of my team's game:"Fucking Telenet"*
+![Concept art of my team's game:"Fucking Telenet"](/assets/img/my_experience_with_game_jams/image3.png)*Concept art of my team's game:\"Connection lost\" AKA \"Fucking Telenet\"*
 
 Aside from that things went pretty well,
 the site coordinators took notice that we were further along with our
