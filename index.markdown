@@ -3,10 +3,18 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-inner-title: Professional insights. Fun projects.
+inner-title: Homepage
 ---
 
-My name is Frank Goyens. Born on January 22, 1993. I am a professional C++ software engineer. And software architect.
+My name is Frank Goyens, born on January 22, 1993. Welcome to the launchpad of my personal projects!
 
-I like to make posts here about insights that I gather at my fulltime job. And about software projects that I work on as a hobby. These projects can be virtually anything, though I have always been endeared by game making.
+## Live projects
 
+(NEW) MKitten - Jump King meets Mario! A ragegame platformer about a fiercely optimistic kitten.  
+[Play the web demo now!](/mkitten_demo/)
+
+Danger Zones - A mobile game where you navigate a 3D robot through 2D levels.  
+[Official website, download it on your favorite device!](https://www.dangerzonesgame.com){:target="_blank"}
+
+Reading Parrot Jacky - A mobile app that adds sound effects to the story you read to your kids.  
+[Get it from the Apple Appstore!](https://apps.apple.com/be/app/read-to-kids-with-jacky/id6450747318){:target="_blank"}
