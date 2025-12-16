@@ -2,7 +2,11 @@
 <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
 <script type="text/javascript" charset="UTF-8">
 document.addEventListener('DOMContentLoaded', function () {
-cookieconsent.run({"notice_banner_type":"headline","consent_type":"implied","palette":"dark","language":"en","page_load_consent_levels":["strictly-necessary","functionality","tracking","targeting"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_privacy_policy_url":"https://www.privacypolicygenerator.info/live.php?token=yYCGzuDvSYjyUDUQ4NKiD0oQeBidfVdd"});
+  if(typeof cookieconsent !== "undefined"){
+    cookieconsent.run({"notice_banner_type":"headline","consent_type":"implied","palette":"dark","language":"en","page_load_consent_levels":["strictly-necessary","functionality","tracking","targeting"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_privacy_policy_url":"https://www.privacypolicygenerator.info/live.php?token=yYCGzuDvSYjyUDUQ4NKiD0oQeBidfVdd"});
+  }else{
+    console.log("Something went wrong with loading the cookie consent script. The client might have blocked it.");
+  }
 });
 </script>
 
