@@ -52,6 +52,16 @@
 	width: 30%;
 }
 
+.megadrive-boxart {
+	border: 2px solid #333;
+	box-shadow: 
+		4px 4px 8px rgba(0, 0, 0, 0.3),
+		8px 8px 16px rgba(0, 0, 0, 0.2),
+		inset 1px 1px 0 rgba(255, 255, 255, 0.3);
+	display: block;
+	max-width: 300px;
+}
+
 .share-page {
     text-align: center;
     padding: 8px 15px;
