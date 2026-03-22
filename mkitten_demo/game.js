@@ -91,6 +91,7 @@ Module.expectedDataFileDownloads++;
         if (!check) throw msg + new Error().stack;
       }
       Module['FS_createPath']('/', 'assets', true, true);
+      Module['FS_createPath']('/assets', 'dance_frames', true, true);
       Module['FS_createPath']('/', 'sti', true, true);
       Module['FS_createPath']('/sti', 'plugins', true, true);
       Module['FS_createPath']('/sti', 'sti', true, true);
@@ -169,22 +170,21 @@ Module.expectedDataFileDownloads++;
 
     /* Check if there's a cached package, and if so whether it's the latest available */
     function checkCachedPackage(db, packageName, callback, errback) {
-      callback(false);
-      // var transaction = db.transaction([METADATA_STORE_NAME], IDB_RO);
-      // var metadata = transaction.objectStore(METADATA_STORE_NAME);
+      var transaction = db.transaction([METADATA_STORE_NAME], IDB_RO);
+      var metadata = transaction.objectStore(METADATA_STORE_NAME);
 
-      // var getRequest = metadata.get("metadata/" + packageName);
-      // getRequest.onsuccess = function(event) {
-      //   var result = event.target.result;
-      //   if (!result) {
-      //     return callback(false);
-      //   } else {
-      //     return callback(PACKAGE_UUID === result.uuid);
-      //   }
-      // };
-      // getRequest.onerror = function(error) {
-      //   errback(error);
-      // };
+      var getRequest = metadata.get("metadata/" + packageName);
+      getRequest.onsuccess = function(event) {
+        var result = event.target.result;
+        if (!result) {
+          return callback(false);
+        } else {
+          return callback(PACKAGE_UUID === result.uuid);
+        }
+      };
+      getRequest.onerror = function(error) {
+        errback(error);
+      };
     };
 
     function fetchCachedPackage(db, packageName, callback, errback) {
@@ -289,6 +289,6 @@ Module.expectedDataFileDownloads++;
     }
 
   }
-  loadPackage({"package_uuid":"fa53d527-327d-4788-8ae7-b5ecda602403","remote_package_size":1004304,"files":[{"filename":"/assets/Icons_Controller.png","crunched":0,"start":0,"end":2286,"audio":false},{"filename":"/assets/MKitten_pixelized.png","crunched":0,"start":2286,"end":5476,"audio":false},{"filename":"/assets/demo_victory_face.png","crunched":0,"start":5476,"end":70500,"audio":false},{"filename":"/assets/gamecontrollerdb.txt","crunched":0,"start":70500,"end":654523,"audio":false},{"filename":"/assets/pixelfont-11p.png","crunched":0,"start":654523,"end":656063,"audio":false},{"filename":"/assets/spike.png","crunched":0,"start":656063,"end":658711,"audio":false},{"filename":"/assets/star.png","crunched":0,"start":658711,"end":660091,"audio":false},{"filename":"/assets/world_tileset.png","crunched":0,"start":660091,"end":672745,"audio":false},{"filename":"/level1.lua","crunched":0,"start":672745,"end":796628,"audio":false},{"filename":"/main.lua","crunched":0,"start":796628,"end":856438,"audio":false},{"filename":"/sti/atlas.lua","crunched":0,"start":856438,"end":860813,"audio":false},{"filename":"/sti/graphics.lua","crunched":0,"start":860813,"end":862908,"audio":false},{"filename":"/sti/init.lua","crunched":0,"start":862908,"end":909989,"audio":false},{"filename":"/sti/plugins/box2d.lua","crunched":0,"start":909989,"end":919724,"audio":false},{"filename":"/sti/plugins/bump.lua","crunched":0,"start":919724,"end":925501,"audio":false},{"filename":"/sti/sti/atlas.lua","crunched":0,"start":925501,"end":929876,"audio":false},{"filename":"/sti/sti/graphics.lua","crunched":0,"start":929876,"end":931971,"audio":false},{"filename":"/sti/sti/init.lua","crunched":0,"start":931971,"end":979052,"audio":false},{"filename":"/sti/sti/plugins/box2d.lua","crunched":0,"start":979052,"end":988787,"audio":false},{"filename":"/sti/sti/plugins/bump.lua","crunched":0,"start":988787,"end":994564,"audio":false},{"filename":"/sti/sti/utils.lua","crunched":0,"start":994564,"end":999434,"audio":false},{"filename":"/sti/utils.lua","crunched":0,"start":999434,"end":1004304,"audio":false}]});
+  loadPackage({"package_uuid":"154c7999-a3cd-430b-9e50-c580c0a30a48","remote_package_size":1268181,"files":[{"filename":"/assets/Icons_Controller.png","crunched":0,"start":0,"end":2286,"audio":false},{"filename":"/assets/MKitten_pixelized.png","crunched":0,"start":2286,"end":5476,"audio":false},{"filename":"/assets/dance_frames/frame1.png","crunched":0,"start":5476,"end":61648,"audio":false},{"filename":"/assets/dance_frames/frame2.png","crunched":0,"start":61648,"end":116637,"audio":false},{"filename":"/assets/dance_frames/frame3.png","crunched":0,"start":116637,"end":172809,"audio":false},{"filename":"/assets/dance_frames/frame4.png","crunched":0,"start":172809,"end":227429,"audio":false},{"filename":"/assets/demo_victory_face.png","crunched":0,"start":227429,"end":292453,"audio":false},{"filename":"/assets/demo_victory_glow.png","crunched":0,"start":292453,"end":326339,"audio":false},{"filename":"/assets/gamecontrollerdb.txt","crunched":0,"start":326339,"end":910362,"audio":false},{"filename":"/assets/ground_particle.png","crunched":0,"start":910362,"end":910791,"audio":false},{"filename":"/assets/mkitten_idle_pixelized.png","crunched":0,"start":910791,"end":913925,"audio":false},{"filename":"/assets/mkitten_leap_pixelized.png","crunched":0,"start":913925,"end":917430,"audio":false},{"filename":"/assets/mkitten_strong_pixelized.png","crunched":0,"start":917430,"end":922099,"audio":false},{"filename":"/assets/mkitten_strong_walk_1_pixelized.png","crunched":0,"start":922099,"end":926615,"audio":false},{"filename":"/assets/mkitten_strong_walk_2_pixelized.png","crunched":0,"start":926615,"end":931399,"audio":false},{"filename":"/assets/mkitten_walk_1_pixelized.png","crunched":0,"start":931399,"end":934606,"audio":false},{"filename":"/assets/mkitten_walk_2_pixelized.png","crunched":0,"start":934606,"end":937783,"audio":false},{"filename":"/assets/pixelfont-11p.png","crunched":0,"start":937783,"end":939323,"audio":false},{"filename":"/assets/spike.png","crunched":0,"start":939323,"end":941971,"audio":false},{"filename":"/assets/star.png","crunched":0,"start":941971,"end":943351,"audio":false},{"filename":"/assets/world_tileset.png","crunched":0,"start":943351,"end":956005,"audio":false},{"filename":"/level1.lua","crunched":0,"start":956005,"end":1028747,"audio":false},{"filename":"/main.lua","crunched":0,"start":1028747,"end":1120315,"audio":false},{"filename":"/sti/atlas.lua","crunched":0,"start":1120315,"end":1124690,"audio":false},{"filename":"/sti/graphics.lua","crunched":0,"start":1124690,"end":1126785,"audio":false},{"filename":"/sti/init.lua","crunched":0,"start":1126785,"end":1173866,"audio":false},{"filename":"/sti/plugins/box2d.lua","crunched":0,"start":1173866,"end":1183601,"audio":false},{"filename":"/sti/plugins/bump.lua","crunched":0,"start":1183601,"end":1189378,"audio":false},{"filename":"/sti/sti/atlas.lua","crunched":0,"start":1189378,"end":1193753,"audio":false},{"filename":"/sti/sti/graphics.lua","crunched":0,"start":1193753,"end":1195848,"audio":false},{"filename":"/sti/sti/init.lua","crunched":0,"start":1195848,"end":1242929,"audio":false},{"filename":"/sti/sti/plugins/box2d.lua","crunched":0,"start":1242929,"end":1252664,"audio":false},{"filename":"/sti/sti/plugins/bump.lua","crunched":0,"start":1252664,"end":1258441,"audio":false},{"filename":"/sti/sti/utils.lua","crunched":0,"start":1258441,"end":1263311,"audio":false},{"filename":"/sti/utils.lua","crunched":0,"start":1263311,"end":1268181,"audio":false}]});
 
 })();
