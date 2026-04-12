@@ -6,7 +6,7 @@ var Love = (function() {
 function(Love) {
   /*IMPORTANT!!! the love.js packinging for some reason also changes the page title, this is done in the very long line of code below that loads the Love module
   * be sure to apply the same fix when deploying a new version of the game, or the page title will just be "untitled".
-  * To find this change, expand the entire line in the editor (i.e. vscode), and find 'title', uncommend the first "setWindowTitle" call statement
+  * To find this change, expand the entire line in the editor (i.e. vscode), and find 'title', uncomment the first "setWindowTitle" call statement
   * --> if(typeof setWindowTitle!=="undefined"){ <UNCOMMENT> setWindowTitle(UTF8ToString($0)) </UNCOMMENT> }return 0 <-- 
   */
   Love = Love || {};
