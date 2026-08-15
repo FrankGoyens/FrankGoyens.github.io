@@ -36,14 +36,59 @@
     loadingContext.fillText("Powered By LÖVE.", canvas.scrollWidth / 2, canvas.scrollHeight / 4 * 3);
     }
 
-    window.onload = function () { window.focus(); };
-    window.onclick = function () { window.focus(); };
+    var gameCanvas = document.getElementById('canvas');
+    var isFormFieldElement = function(element) {
+        return !!(element && (
+            element.tagName === 'INPUT' ||
+            element.tagName === 'TEXTAREA' ||
+            element.tagName === 'SELECT' ||
+            element.isContentEditable
+        ));
+    };
+
+    if (gameCanvas) {
+        gameCanvas.setAttribute('tabindex', '0');
+        gameCanvas.addEventListener('mousedown', function () {
+            gameCanvas.focus();
+        });
+        gameCanvas.addEventListener('blur', function () {
+            gameCanvas.setAttribute('data-has-focus', 'false');
+        });
+        gameCanvas.addEventListener('focus', function () {
+            gameCanvas.setAttribute('data-has-focus', 'true');
+        });
+    }
+
+    var originalAddEventListener = EventTarget.prototype.addEventListener;
+    EventTarget.prototype.addEventListener = function(type, listener, options) {
+        if (['keydown', 'keyup', 'keypress'].indexOf(type) !== -1 && typeof listener === 'function') {
+            var wrapped = function(event) {
+                var target = event.target || document.activeElement;
+                if (isFormFieldElement(target)) {
+                    return;
+                }
+                if (this === window && (!gameCanvas || gameCanvas.getAttribute('data-has-focus') !== 'true')) {
+                    return;
+                }
+                return listener.call(this, event);
+            };
+            return originalAddEventListener.call(this, type, wrapped, options);
+        }
+        return originalAddEventListener.call(this, type, listener, options);
+    };
 
     window.addEventListener("keydown", function(e) {
-    // space and arrow keys
-    if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
-        e.preventDefault();
-    }
+        var active = document.activeElement;
+        var isFormField = isFormFieldElement(active);
+
+        if (isFormField || (active && active !== gameCanvas) || !gameCanvas || gameCanvas.getAttribute('data-has-focus') !== 'true') {
+            return;
+        }
+
+        // space and arrow keys while the game canvas is focused
+        if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+            e.preventDefault();
+        }
     }, false);
 
     var Module = {

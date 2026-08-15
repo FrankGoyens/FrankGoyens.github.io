@@ -9,4 +9,6 @@ Now playing:
 
 ![mkitten game box art in MegaDrive style](/assets/img/mkitten_capsule_megadrive.png){:class="megadrive-boxart"}
 
+{% include kitten_game_mail_signup.html %}
+{% include kitten_bug_report_form.html %}
 {% include mkitten-demo.html %}

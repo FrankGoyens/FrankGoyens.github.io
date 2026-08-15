@@ -1,0 +1,33 @@
+<!-- Remember enctype="multipart/form-data" is REQUIRED for images -->
+<form 
+  action="https://formsubmit.co/your-email@mywebsite.com" 
+  method="POST" 
+  enctype="multipart/form-data"
+>
+
+  <!-- Subject line for your inbox -->
+  <input type="hidden" name="_subject" value="New Bug Report with Screenshot">
+
+  <!-- Optional user contact info -->
+  <label for="email">Your Email (optional):</label><br>
+  <input type="email" name="email" id="email" placeholder="In case we need to follow up"><br><br>
+
+  <!-- Feedback details -->
+  <label for="description">Describe the issue:</label><br>
+  <textarea name="description" id="description" rows="4" required placeholder="What happened?"></textarea><br><br>
+
+  <!-- Image Upload Field -->
+  <label for="screenshot">Attach a Screenshot (PNG, JPG):</label><br>
+  <input 
+    type="file" 
+    name="attachment" 
+    id="screenshot" 
+    accept="image/png, image/jpeg, image/webp"
+  ><br><br>
+
+  <button type="submit">Submit Report</button>
+  <p style="font-size: 0.8rem; opacity: 0.8; margin-top: 8px;">
+    Feedback and attached screenshots are processed securely via FormSubmit to help us improve our apps. 
+    Read our <a href="/privacy.html" target="_blank">Privacy Policy</a>.
+  </p>
+</form>
