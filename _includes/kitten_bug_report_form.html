@@ -1,23 +1,24 @@
 <div class="retro-card retro-form retro-bug-form">
-  <h2>Report a bug</h2>
+  <h2>Feedback form</h2>
   <!-- Remember enctype="multipart/form-data" is REQUIRED for images -->
   <form 
-    action="https://formsubmit.co/your-email@mywebsite.com" 
+    action="https://formsubmit.co/frank.goyens@geeapp.info" 
     method="POST" 
     enctype="multipart/form-data"
     class="retro-form-panel"
   >
-
+    <p>Would you like to give some feedback? Perhaps you found a bug? Let me know!</p>
     <!-- Subject line for your inbox -->
-    <input type="hidden" name="_subject" value="New Bug Report with Screenshot">
+    <input type="hidden" name="_subject" value="MKitten feedback">
+    <input type="hidden" name="game_version" value="Demo v0.1.0">
 
     <!-- Optional user contact info -->
     <label for="email">Your Email (optional):</label>
     <input type="email" name="email" id="email" placeholder="In case we need to follow up">
 
     <!-- Feedback details -->
-    <label for="description">Describe the issue:</label>
-    <textarea name="description" id="description" rows="4" required placeholder="What happened?"></textarea>
+    <label for="description">Description:</label>
+    <textarea name="description" id="description" rows="4" required placeholder="What feedback would you like to give?"></textarea>
 
     <!-- Image Upload Field -->
     <label for="screenshot">Attach a Screenshot (PNG, JPG):</label>
@@ -28,9 +29,9 @@
       accept="image/png, image/jpeg, image/webp"
     >
 
-    <button type="submit">Submit Report</button>
+    <button type="submit">Submit Feedback</button>
     <p>
-      Feedback and attached screenshots are processed securely via FormSubmit to help us improve our apps. 
+      Feedback and attached screenshots are processed securely via FormSubmit to help us improve the game. 
       Read our <a href="/privacy" target="_blank">Privacy Policy</a>.
     </p>
   </form>

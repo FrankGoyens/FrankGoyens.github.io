@@ -300,11 +300,7 @@
 	border-radius: 18px;
 	box-shadow: 0 0 0 4px #4a382c, 10px 10px 0 rgba(0, 0, 0, 0.18);
 
-	// the following three rules enable "breaking out" of minima's post width,
-	// because minima's post width is to narrow for playing a game
-	width: min(100vw, 1400px);
-	margin-left: calc(50% - min(50vw, 700px));
-	margin-right: calc(50% - min(50vw, 700px));
+	width: calc(100% - 2rem);
 
 	text-align: center;
 }
@@ -335,6 +331,15 @@
 	min-width: 0;
 }
 
+@media screen and (min-width: 801px) {
+	.mkitten-game-shell {
+		// the following three rules enable "breaking out" of minima's post width,
+		// because minima's post width is to narrow for playing a game
+		width: min(80vw, 1400px);
+		margin-left: calc(50% - min(40vw, 700px));
+		margin-right: calc(50% - min(40vw, 700px));
+	}
+}
 
 @media screen and (max-width: 800px) {
 	.mkitten-demo-header {
