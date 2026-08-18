@@ -44,17 +44,28 @@
         ));
     };
 
+    function setGameCanvasFocusState(hasFocus) {
+        gameCanvas.setAttribute('data-has-focus', hasFocus ? 'true' : 'false');
+        if (hasFocus) {
+            gameCanvas.focus();
+        }
+    }
+
     if (gameCanvas) {
         gameCanvas.setAttribute('tabindex', '0');
         gameCanvas.addEventListener('mousedown', function () {
-            gameCanvas.focus();
+            setGameCanvasFocusState(true);
         });
         gameCanvas.addEventListener('blur', function () {
-            gameCanvas.setAttribute('data-has-focus', 'false');
+            setGameCanvasFocusState(false);
         });
         gameCanvas.addEventListener('focus', function () {
-            gameCanvas.setAttribute('data-has-focus', 'true');
+            setGameCanvasFocusState(true);
         });
+
+        setTimeout(function () {
+            setGameCanvasFocusState(true);
+        }, 0);
     }
 
     var originalAddEventListener = EventTarget.prototype.addEventListener;
